@@ -5,18 +5,9 @@ export const config: Config = {
   minifyJs: true,
   outputTargets: [
     {
-      type: 'dist-custom-elements-bundle',
-    },
-    {
-      type: 'dist-custom-elements',
-    },
-    { type: 'dist-hydrate-script' },
-    {
-      type: 'dist'
-    },
-    {
       type: 'www',
-      // serviceWorker: null,
+      baseUrl: 'https://stenciljs.com/',
+      prerenderConfig: './prerender.config.ts',
     },
   ],
   preamble: 'hello ryan\nwhat is up my dude?'

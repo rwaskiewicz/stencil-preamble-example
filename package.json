@@ -15,7 +15,7 @@
   "scripts": {
     "rmrf": "rm -rf dist build hydrate www",
     "build": "npm run rmrf && stencil build",
-    "build-hy": "npm run rmrf && stencil build --hydrate",
+    "build-prerender": "npm run rmrf && stencil build --prerender",
     "start": "stencil build --dev --watch --serve",
     "start-sourcemaps": "rm -rf www && stencil build --dev --watch --serve --config stencil.config.sourcemaps.ts",
     "test": "stencil test --spec --e2e",
